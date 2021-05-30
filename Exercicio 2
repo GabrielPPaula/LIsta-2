@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main(void) {
+  
+int v_aux, v_resto, produto, v_cont;
+
+ for(v_cont = 100; v_cont < 1000; v_cont ++)
+ {
+     v_aux = v_cont;
+     produto =1;
+
+    while(v_aux>0)
+    {
+      v_resto=v_aux % 10;
+      produto=produto*v_resto;
+      v_aux=v_aux/10;
+
+     }
+
+  printf("produto dos digitos (%d) eh: %d \n", v_cont,produto);
+ }
+
+ printf("\n");
+ 
+  return 0;
+}
